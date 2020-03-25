@@ -1,0 +1,4 @@
+[target.wasm32-unknown-emscripten]
+rustflags = [
+    '-Clink-args=-s EXPORTED_FUNCTIONS=["_lnpbp_test"] -s EXTRA_EXPORTED_RUNTIME_METHODS=["cwrap"] -s ASSERTIONS=1',
+]
